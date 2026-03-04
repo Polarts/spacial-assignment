@@ -1,0 +1,52 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--color-white);
+}
+
+.appHeader {
+  background: var(--gradient-primary);
+  color: white;
+  padding: var(--spacing-xl) var(--spacing-2xl);
+  box-shadow: var(--shadow-lg);
+
+  h1 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-tight);
+  }
+
+  p {
+    margin: var(--spacing-xs) 0 0 0;
+    font-size: var(--font-size-base);
+    opacity: var(--opacity-subtle);
+    font-weight: var(--font-weight-light);
+  }
+}
+
+.appContent {
+  display: flex;
+  flex: 1;
+  gap: var(--layout-gap);
+  padding: var(--layout-gap);
+  overflow: hidden;
+}
+
+.viewerContainer {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .appContent {
+    flex-direction: column;
+  }
+
+  .actionLog {
+    width: 100% !important;
+    height: var(--actionlog-mobile-height);
+  }
+}

@@ -1,0 +1,132 @@
+/* CSS Custom Properties - Design Tokens */
+:root {
+  /* Color Palette - Primary */
+  --color-primary: #646cff;
+  --color-primary-hover: #535bf2;
+  
+  /* Color Palette - Gradients */
+  --gradient-start: #667eea;
+  --gradient-end: #764ba2;
+  --gradient-primary: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #5568d3 0%, #6a4193 100%);
+  --gradient-subtle: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  
+  /* Color Palette - Neutrals */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark-bg: #242424;
+  --color-light-bg: #ffffff;
+  
+  /* Color Palette - Grays */
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f9f9f9;
+  --color-gray-200: #f5f5f5;
+  --color-gray-300: #f0f0f0;
+  --color-gray-400: #e0e0e0;
+  --color-gray-500: #ccc;
+  --color-gray-600: #999;
+  --color-gray-700: #888;
+  --color-gray-800: #666;
+  --color-gray-900: #333;
+  
+  /* Color Palette - Text */
+  --text-primary: #333;
+  --text-secondary: #555;
+  --text-tertiary: #666;
+  --text-muted: #888;
+  --text-light: #999;
+  --text-dark: rgba(255, 255, 255, 0.87);
+  --text-on-dark: #213547;
+  
+  /* Color Palette - Action Types */
+  --color-zoom-in: #51cf66;
+  --color-zoom-out: #ffa94d;
+  --color-pan: #74c0fc;
+  --color-reset: #a78bfa;
+  --color-danger: #ff6b6b;
+  --color-danger-hover: #ff5252;
+  
+  /* Color Palette - Buttons */
+  --button-bg-dark: #1a1a1a;
+  --button-bg-light: #f9f9f9;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  
+  /* Border Radius */
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-xl: 8px;
+  
+  /* Border Widths */
+  --border-thin: 1px;
+  --border-medium: 2px;
+  --border-thick: 3px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-primary: 0 2px 8px rgba(102, 126, 234, 0.4);
+  
+  /* Typography */
+  --font-family-base: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-mono: 'Monaco', 'Courier New', monospace;
+  
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-md: 13px;
+  --font-size-base: 14px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 3.2em;
+  
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-base: 1.5;
+  --line-height-tight: 1.1;
+  
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-wide: 0.5px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.25s ease;
+  
+  /* Z-index */
+  --z-index-base: 1;
+  --z-index-sticky: 10;
+  
+  /* Layout */
+  --layout-gap: 16px;
+  --layout-max-width: 1200px;
+  --actionlog-width: 400px;
+  --actionlog-mobile-height: 300px;
+  
+  /* Scrollbar */
+  --scrollbar-width: 6px;
+  
+  /* Opacity */
+  --opacity-subtle: 0.95;
+  --opacity-overlay: 0.9;
+}
+
+/* Light Theme (Media Query Override) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-dark: var(--text-on-dark);
+    --color-dark-bg: var(--color-light-bg);
+  }
+}

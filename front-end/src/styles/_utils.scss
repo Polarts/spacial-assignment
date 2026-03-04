@@ -1,0 +1,64 @@
+/* Utility Classes - Reusable Patterns */
+
+/* Grid Pattern Background */
+.grid-pattern {
+  background: 
+    linear-gradient(135deg, var(--color-gray-200) 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, var(--color-gray-200) 25%, transparent 25%) -10px 0,
+    linear-gradient(315deg, var(--color-gray-200) 25%, transparent 25%),
+    linear-gradient(45deg, var(--color-gray-200) 25%, transparent 25%);
+  background-size: 20px 20px;
+  background-color: var(--color-white);
+}
+
+/* Scrollbar Styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-gray-300);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-gray-500);
+  border-radius: var(--radius-sm);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-600);
+}
+
+/* Action Type Borders */
+.action-border-zoom-in {
+  border-left: var(--border-thick) solid var(--color-zoom-in);
+}
+
+.action-border-zoom-out {
+  border-left: var(--border-thick) solid var(--color-zoom-out);
+}
+
+.action-border-pan {
+  border-left: var(--border-thick) solid var(--color-pan);
+}
+
+.action-border-reset {
+  border-left: var(--border-thick) solid var(--color-reset);
+}
+
+/* Action Type Colors */
+.action-color-zoom-in {
+  color: var(--color-zoom-in);
+}
+
+.action-color-zoom-out {
+  color: var(--color-zoom-out);
+}
+
+.action-color-pan {
+  color: var(--color-pan);
+}
+
+.action-color-reset {
+  color: var(--color-reset);
+}
