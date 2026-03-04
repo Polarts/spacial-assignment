@@ -32,7 +32,7 @@ A serverless file repository API built with NestJS and deployed on AWS Lambda. P
 - [Architecture Diagram](back-end/Architecture.drawio) - Visual architecture diagram (draw.io format)
 - [Quick Start Guide](back-end/QUICKSTART.md) - Setup and deployment instructions
 
-![Architecture Diagram](back-end/Architecture.drawio)
+![Architecture Diagram](Architecture.חפע)
 
 ### [front-end/](front-end/)
 
@@ -128,3 +128,4 @@ The application follows a modern serverless architecture:
 ## 📝 License
 
 This project is part of a technical interview demonstration.
+
